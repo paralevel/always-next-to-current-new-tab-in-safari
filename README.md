@@ -27,6 +27,7 @@ defaults delete com.apple.safari WBSNewTabPositionAppliesToSpawnedTabsPreference
 ~~~
 
 <br>
+<br>
 
 ***For blank tabs***
 
@@ -81,7 +82,9 @@ tell application "Safari"
 end tell
 ~~~
   
-</li><li>Open Safari and check if the keyboard shortcut works
+  </li><li>Open Safari and check if the keyboard shortcut works
+<br /><br />
+  </li><li>Make Keyboard Cowboy start automatically when you log in – click the menu bar icon and select <i>Open</i> <i>at</i> <i>Login</i>
 <br /><br />
   <ins><i>Optionally also</i></ins>
 <br /><br />
@@ -89,8 +92,6 @@ end tell
 <br /><br />
   </li><li>To get rid of the Dock icon, click the icon and then in the open Keyboard Cowboy window, press command-W or click the red <i>close</i> button in the top-left corner (don't press command-Q, or the background process too gets terminated)
 <br /><br />
-  </li><li>To make Keyboard Cowboy start automatically when you log in, click the menu bar icon and select <i>Open</i> <i>at</i> <i>Login</i>
-<br /><br />
-  </li><li>In Safari, right-click the toolbar, choose <i>Customize</i> <i>Toolbar</i> and drag the +/New Tab button out of the toolbar (to avoid getting annoyed by it always opening the tab at the end of the tab bar)
+  </li><li>In Safari, right-click the toolbar, choose <i>Customize</i> <i>Toolbar</i> and drag the +/New Tab button out of the toolbar, since it opens the tab at the end of the entire tab bar
   </li></ol>
 <br/>
