@@ -35,19 +35,21 @@ defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -i
 
 ***For blank tabs***
 
+<br>
+
 1. Download Keyboard Cowboy: https://zenangst.github.io/app/keyboardcowboy/index.html
 2. Install and launch it<br>
-- <i>In the leftmost panel</i>
-3. On first launch When the “Choose your configuration” window appears, click “Empty" followed by “Confirm”
+3. On first launch, when the “Choose your configuration” window appears, click “Empty" followed by “Confirm”
 4. Click the ”Request Permission" button in the next window
 5. In the ”Accessibility Access" dialog that appears, click “Open System Settings”
-6. In the System Settings window, check Keyboard Cowboy.app
+6. In the System Settings window that opens, enable Keyboard Cowboy.app
 7. Click the Keyboard Cowboy icon in the Menu Bar and select “Open Keyboard Cowboy”
-8. In the left panel, click the very hard to see “Add Group” button
-9. In the window that opens, set the name to “Safari”, then under “Allowed Applications". click “Applications”, select Safari and click “Save”
+- <i>In the leftmost panel</i>
+8. Click the very hard to see “Add Group” button
+9. In the window that opens, set the name to “Safari”, then under “Allowed Applications", click “Applications”, select Safari and click “Save”
 10. Make sure the newly created “Safari” group is selected
 - <i>In the middle panel</i>
-11. Click the “Add Workflow”
+11. Click the “Add Workflow” button
 - <i>In the rightmost panel</i>
 12. Set the workflow name to e.g. “New tab”
 13. Under “Add Trigger”, click “Keyboard Shortcut”
@@ -73,7 +75,7 @@ end tell
 17. Press Command + W or manually close the Keyboard Cowboy window, which also removes the icon from the Dock – don't press Command + Q or the Menu Bar process quits too
 18. Open Safari and check if the keyboard shortcut works
 19. The first time the keyboard shortcut triggers the assigned script, click "Allow" in the dialog that opens asking you to allow “Keyboard Cowboy.app” to control “Safari.app”
-20. Make Keyboard Cowboy start automatically when you log in – click the menu bar icon and select “Open at Login</i>
+20. Make Keyboard Cowboy start automatically when you log in – click the menu bar icon and select “Open at Login”
 - <i>Optionally also</i>
 21. In Safari, right-click the toolbar, choose <i>Customize</i> <i>Toolbar</i> and drag the +/New Tab button out of the toolbar, since it opens the tab at the end of the entire tab bar
     
