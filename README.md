@@ -44,25 +44,23 @@ defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -i
 <br /><br />
     <ins><i>Once opened, in the leftmost panel</i></ins>
 <br /><br />
-  </li><li>Under <i>Configuration</i>, leave it at <i>Default</i> <i>Configuration</i>
+  </li><li>In the left panel, click the barely visible <i>Add</i> <i>Group</i> button
 <br /><br />
-  </li><li>Under <i>Groups</i>, click the barely visible <i>Add</i> <i>Group</i> button
-<br /><br />
-  </li><li>In the window that opens, set the name to <i>Safari</i>, then in the <i>Application</i> drop-down menu, select Safari, and finally click <i>Save</i>
+  </li><li>In the window that opens, set the name to <i>Safari</i>, then click the barely visible <i>Applications</i> button, select Safari, click <i>Save</i>
 <br /><br />
   </li><li>Make sure the <i>Safari</i> group is selected
 <br /><br />
     <ins><i>In the middle panel</i></ins>
 <br /><br />
-</li><li>Under <i>Workflows</i>, click the barely visible <i>Add</i> <i>Workflow</i> button
+</li><li>Click the barely visible <i>Add</i> <i>Workflow</i> button
 <br /><br />
   <ins><i>In the rightmost panel</i></ins>
 <br /><br />
   </li><li>Set the workflow name to e.g. <i>New</i> <i>tab</i>
 <br /><br />
-  </li><li>Under <i>Add</i> <i>Trigger</i>, click the <i>Keyboard</i> <i>Shortcut</i> button
+  </li><li>Under <i>Add</i> <i>Trigger</i>, click the barely visible <i>Keyboard</i> <i>Shortcut</i> button
 <br /><br />
-  </li><li>Use command-T (recommended) as the keyboard shortcut
+  </li><li>For the keyboard shortcut, press command + T (recommended)
 <br /><br />
   </li><li>Click the <i>New</i> <i>Command</i> button and then in the popup menu, select <i>Scripting</i> and then <i>New</i> <i>AppleScript</i>
 <br /><br />
