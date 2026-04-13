@@ -72,25 +72,12 @@ defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -i
 <br /><br />
   </li><li>When the red “Recording…” widget appears, press Command + T (recommended)
 <br /><br />
-
-clik new shell script
-
-osascript -e 'tell application "Safari" to tell front window to set _new to make new tab at after (get current tab)'
-
-“Keyboard Cowboy.app” wants access to control “Safari.app”. 
-
-click allow
-
-delete prev script coommand
-
-then
-
-	  
-  </li><li>Click “New Command” and then in the popup menu, select “Scripting” and then “New Apple Script”
+  </li><li>Click “New Command” and then in the popup menu, select “Scripting” and then “New Shellscript” (cannot use AppleScript directly since Keyboard Cowboy's AppleScript implementation isn't working properly)
 <br /><br />
   </li><li>Click the “Script goes here” field and paste the following
   
 ~~~applescript
+#!/usr/bin/osascript
 tell application "Safari"
 	tell front window
 		set _new to make new tab at after (get current tab)
@@ -99,7 +86,7 @@ tell application "Safari"
 		set URL of _new to _url
 		# wait until the tab gets a real url, or else the location bar won't be focused when switching to the new tab
 		repeat until URL of _new is not _url
-			delay 0.5
+			delay 0.2
 		end repeat
 		set current tab to _new
 	end tell
@@ -108,14 +95,10 @@ end tell
 
    </li><li>Press Command + W or manually close the Keyboard Cowboy window, which also removes the icon from the Dock – don't press Command + Q or the Menu Bar process quits too
 <br /><br />
-   </li><li>Open System Settings
-<br /><br />
-  </li><li>Go to Privacy & Security › Automation › Keyboard Cowboy.app and make sure Safari.app is enabled
-<br /><br />
-  </li><li>Go to Privacy & Security › Accessibility and make sure Keyboard Cowboy.app is enabled
-<br /><br />
   </li><li>Open Safari and check if the keyboard shortcut works
 <br /><br />
+	   </li><li>The first time the keyboard shortcut triggers the assigned script, click "Allow" in the dialog that opens asking you to allow “Keyboard Cowboy.app” to control “Safari.app”
+		   <br /><br />
   </li><li>Make Keyboard Cowboy start automatically when you log in – click the menu bar icon and select “Open at Login</i>
 <br /><br />
   <ins><i>Optionally also</i></ins>
