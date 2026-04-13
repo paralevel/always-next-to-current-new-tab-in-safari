@@ -2,34 +2,35 @@
 
 <br>
 
-***For tabs opened from links***<br><sub>_(except when opened from the Edit Bookmarks page)_</sub>
+***For tabs opened with URLs***<br><sub>_(except when opened from the Edit Bookmarks page)_</sub>
 
 <br>
 
 Open Terminal and run the following commands – then restart Safari
 ~~~flf
-defaults write $HOME/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari.plist WBSNewTabPositionPreferenceKey -int 0
+defaults write -app safari WBSNewTabPositionPreferenceKey -int 0
 ~~~
 ~~~flf
-defaults write $HOME/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari.plist WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -int 1
+defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -int 1
 ~~~
+
+<sub>_Workaround if you get a `Could not write domain` error (a bug that happens on new macOS installations or on newly created user accounts, when `com.apple.Safari.plist` hasn't been initialized yet):_</sub>
+<br>
+<sub>_`open $HOME/Library/Containers/com.apple.Safari/Data/Library/Preferences/`_</sub>
+<br>
+<sub>_`defaults read `\<drag and drop `com.apple.Safari.plist` from Finder here\>_</sub>
+<br>
+<sub>_Run the commands again_</sub>
 
 <br>
 
-<sup>
-<i>
+<sub>_To revert:_</sub>
+<br>
+<sub>_`defaults delete -app safari WBSNewTabPositionPreferenceKey`_</sub>
+<br>
+<sub>_`defaults delete -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey`_</sub>
 
-To revert:
-~~~
-defaults delete $HOME/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari.plist WBSNewTabPositionPreferenceKey
-~~~
-~~~
-defaults delete $HOME/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari.plist WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey
-~~~
-
-</i>
-</sup>
-
+<br>
 <br>
 
 ***For blank tabs***
