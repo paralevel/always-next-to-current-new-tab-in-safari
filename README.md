@@ -4,7 +4,7 @@ Position new tabs to the immediate right of the current tab in Safari on macOS T
 
 <br>
 
-***For tabs opened with URLs***<br><sub>_(except when opened from the Edit Bookmarks page)_</sub>
+***For tabs opened with URLs***<br><sub>_(except when opened from the Edit Bookmarks page or external apps)_</sub>
 
 <br>
 
