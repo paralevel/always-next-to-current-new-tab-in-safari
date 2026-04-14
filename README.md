@@ -16,7 +16,7 @@ defaults write -app safari WBSNewTabPositionPreferenceKey -int 0
 defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -int 1
 ~~~
 
-<sub>_Workaround if you get a `Could not write domain` error (a bug that happens on new macOS installations or on newly created user accounts, when `com.apple.Safari.plist` hasn't been initialized yet):_</sub>
+<sub>_Workaround if you get a `Could not write domain` error (a bug that happens on new macOS installations or on newly created user accounts, when `com.apple.Safari.plist` hasn't yet been initialized for the `defaults` command):_</sub>
 <br>
 <sub>_1. `open $HOME/Library/Containers/com.apple.Safari/Data/Library/Preferences/`_</sub>
 <br>
@@ -56,7 +56,7 @@ defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -i
 12. Set the workflow name to e.g. “New tab”
 13. Under “Add Trigger”, click “Keyboard Shortcut”
 14. When the red “Recording…” widget appears, press Command + T (recommended)
-15. Click “New Command” and then in the popup menu, select “Scripting” and then “New Shellscript” (have to use shell script because the current version of Keyboard Cowboy neglects asking for Automation permission when using AppleScript)
+15. Click “New Command” and then in the popup menu, select “Scripting” and then “New Shellscript” (have to use shell script because the current version of Keyboard Cowboy doesn't request the necessary Automation permission when using AppleScript, causing scripts to fail)
 16. Click the “Script goes here” field and paste the following
 ~~~applescript
 #!/usr/bin/osascript
