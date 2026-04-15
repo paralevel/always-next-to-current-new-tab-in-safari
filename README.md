@@ -1,4 +1,4 @@
-# Always adjacent right new tab in Safari
+# Open every new Safari tab next to the current
 
 Position new tabs to the immediate right of the current tab in Safari on macOS Tahoe 26
 
