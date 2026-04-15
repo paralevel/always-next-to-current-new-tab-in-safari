@@ -16,7 +16,7 @@ defaults write -app safari WBSNewTabPositionPreferenceKey -int 0
 defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -int 1
 ~~~
 
-<sub>If you get a `Could not write domain` error, use the following trick that doesn't involve giving Terminal full disk access or restarting the machine (this [is a bug](https://github.com/mathiasbynens/dotfiles/issues/1027) that happens on new macOS installations or on newly created user accounts):</sub>
+<sub>If you get a `Could not write domain` error, you can use the following trick which doesn't involve restarting the machine or giving Terminal full disk access (the reason for the error [is a bug](https://github.com/mathiasbynens/dotfiles/issues/1027) that happens on new macOS installations or on newly created user accounts):</sub>
 
 <sub>`open $HOME/Library/Containers/com.apple.Safari/Data/Library/Preferences/`
 
