@@ -18,13 +18,13 @@ defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -i
 
 <br>
 
-If you get a `Could not write domain` error, this is because the command is trying to make changes to a sandboxed file, and is usually solved by giving Full Disk Access permission to Terminal ([see here](https://github.com/mathiasbynens/dotfiles/issues/1027)), but if you want to avoid doing that just for a single file, you can instead use the following trick:
+If you get a `Could not write domain` error, this is because the command is trying to make changes to a sandboxed file, and it’s usually solved by giving Full Disk Access permission to Terminal ([see here](https://github.com/mathiasbynens/dotfiles/issues/1027)), but if you want to avoid doing that just for a single file, you can instead use the following trick:
 
 1. Open ~/Library/Containers/com.apple.Safari/Data/Library/Preferences/ in Finder (e.g. using `open ~/Library/Containers/com.apple.Safari/Data/Library/Preferences/`)
 2. Copy the file 'com.apple.Safari.plist' and paste it into Terminal (press Ctrl-C to abort afterwards), also has the same effect if you copy the parent folder instead of the plist file
 3. Retry the `defaults` commands
 
-(This trick also works for other files/folders that requires Full Disk Access permission by Terminal and the effect is permanent for the current user account)
+(This trick also works with other sandboxed container files that requires Full Disk Access permission by Terminal and the effect is permanent for that specific sandbox container for the current user)
 
 <br>
 
@@ -42,7 +42,6 @@ defaults delete -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey
 
 </sub>
 
-<br>
 <br>
 
 ***For blank tabs***
