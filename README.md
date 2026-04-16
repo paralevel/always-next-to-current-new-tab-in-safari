@@ -76,7 +76,7 @@ end tell
 
 <br>
 
-_In cases where you actually want to open a tab at the end of the tab bar, you can press Cmd-Opt-T or the “+” (New Tab) button in the toolbar_
+_In cases where you actually want to create a new tab at the end of the tab bar, you can press Cmd-Opt-T or the “+” (New Tab) button in the toolbar_
     
 <br>
 <br>
