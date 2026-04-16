@@ -4,10 +4,8 @@ Position new tabs to the immediate right of the current tab in Safari on macOS T
 
 <br>
 
-***For tabs opened with URLs*** <sub>_except when opened from the Edit Bookmarks page or external apps_</sub>
-
-<br>
-
+***For tabs opened with URLs***
+###
 Open Terminal and run the following commands – then restart Safari
 ~~~flf
 defaults write -app safari WBSNewTabPositionPreferenceKey -int 0
@@ -16,7 +14,9 @@ defaults write -app safari WBSNewTabPositionPreferenceKey -int 0
 defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -int 1
 ~~~
 
+<sub>_Note: These settings are ignored when URLs are opened from the Edit Bookmarks page or external apps_</sub>
 
+<br>
 
 If you get a `Could not write domain` error, this is because the command is trying to make changes to a sandboxed file, and is usually solved by giving Full Disk Access permission to Terminal ([see here](https://github.com/mathiasbynens/dotfiles/issues/1027)), but if you want to avoid doing that just for a single file, you can instead use the following trick:
 
@@ -46,9 +46,7 @@ defaults delete -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey
 <br>
 
 ***For blank tabs***
-
-<br>
-
+###
 1. Download Keyboard Cowboy: https://zenangst.github.io/app/keyboardcowboy/index.html
 2. Install and launch it<br>
 3. On first launch, when the “Choose your configuration” window appears, click “Empty” followed by “Confirm”
@@ -88,8 +86,10 @@ end tell
 18. Open Safari and check if the keyboard shortcut works
 19. The first time the keyboard shortcut triggers the assigned script, click “Allow” in the dialog that opens asking you to allow “Keyboard Cowboy.app” to control “Safari.app”
 20. Make Keyboard Cowboy start automatically when you log in – click the menu bar icon and select “Open at Login”
-- <i>Optionally also</i>
-21. In Safari, right-click the toolbar, choose “Customize Toolbar” and drag the “+”/New Tab button out of the toolbar, since it opens the tab at the end of the entire tab bar
+
+<br>
+
+_In cases where you actually want to open a tab at the end of the tab bar, you can press Cmd-Opt-T or the “+” (New Tab) button in the toolbar_
     
 <br>
 <br>
