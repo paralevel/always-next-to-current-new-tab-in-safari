@@ -16,8 +16,6 @@ defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -i
 
 <sup>(If the commands gives you  a `Could not write domain` error, [see here](https://github.com/paralevel/bypass-sandbox-in-macos-terminal))</sup>
 
-<br>
-
 To revert to default tab opening behavior:
 
 <sub>
