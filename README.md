@@ -2,9 +2,7 @@
 
 Position new tabs to the immediate right of the current tab in Safari on macOS
 
-<br>
-
-_<sub>Compatibility: macOS Tahoe 26</sub>_
+<sup>Compatibility: macOS Tahoe 26</sup>
 
 <br>
 
