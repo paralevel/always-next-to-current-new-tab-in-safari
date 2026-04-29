@@ -14,7 +14,7 @@ defaults write -app safari WBSNewTabPositionPreferenceKey -int 0
 defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -int 1
 ~~~
 
-<sup>(If the commands gives you  a `Could not write domain` error, [see here](https://github.com/paralevel/unfull-disk-access-for-terminal))</sup>
+<sup>(If the commands gives you  a `Could not write domain` error, [see here](https://github.com/paralevel/useful-disk-access-for-terminal))</sup>
 
 To revert to default tab opening behavior:
 
